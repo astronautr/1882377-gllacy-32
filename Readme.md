@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Dmitry Gerasimenko](https://up.htmlacademy.ru/htmlcss/32/user/1882377).
-* Наставник: `Неизвестно`.
+* Студент: [Дмитрий Герасименко](https://up.htmlacademy.ru/htmlcss/32/user/1882377).
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
