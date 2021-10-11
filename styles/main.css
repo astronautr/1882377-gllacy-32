@@ -1,0 +1,23 @@
+.page-body {
+  background-color: #FEAFC3;
+}
+
+.about-us {
+  background-image: url("../img/backgrounds/waffles.jpg");
+  background-repeat: no-repeat;
+}
+
+.blog-news {
+  background-image: url("../img/backgrounds/blog.jpg");
+  background-repeat: no-repeat;
+}
+
+.delivery-info {
+  background-image: url("../img/backgrounds/delivery.jpg");
+  background-repeat: no-repeat;
+}
+
+.contacts {
+  background-image: url("../img/backgrounds/contacts.jpg");
+  background-repeat: no-repeat;
+}
