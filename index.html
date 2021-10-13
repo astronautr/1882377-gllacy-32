@@ -30,7 +30,7 @@
 
     <ul class="navigation-list navigation-user">
       <li class="navigation-item">
-        <a class="navigation-link" href="tel:+7-800-555-86-28">+7&nbsp;800 555-86-28</a>
+        <a class="navigation-link phone-link" href="tel:+7-800-555-86-28">+7&nbsp;800 555-86-28</a>
       </li>
 
       <li class="navigation-item">
@@ -238,25 +238,27 @@
   </section>
 
   <section class="about-us">
-    <h2 class="about-us-title">Магазин Глэйси&nbsp;&mdash; это онлайн и&nbsp;офлайн-магазин по&nbsp;продаже мороженого собственного проиводства на&nbsp;развес</h2>
+    <div class="about-us-content">
+      <h2 class="about-us-title">Магазин Глэйси&nbsp;&mdash; это онлайн и&nbsp;офлайн-магазин по&nbsp;продаже мороженого собственного проиводства на&nbsp;развес</h2>
 
-    <ul class="about-item-list">
-      <li class="about-item">
-        <p class="about-description">Все наше мороженое изготавливается на&nbsp;собственном производстве, с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</p>
-      </li>
+      <ul class="about-item-list">
+        <li class="about-item">
+          <p class="about-description">Все наше мороженое изготавливается на&nbsp;собственном производстве, с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</p>
+        </li>
 
-      <li class="about-item">
-        <p class="about-description">Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств, с&nbsp;которыми нас связывает долговременное сотрудничество.</p>
-      </li>
+        <li class="about-item">
+          <p class="about-description">Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств, с&nbsp;которыми нас связывает долговременное сотрудничество.</p>
+        </li>
 
-      <li class="about-item">
-        <p class="about-description">Для приготовления мороженого используются сливки и&nbsp;молоко высочайшего качества. Все ингредиенты и&nbsp;добавки произведены из&nbsp;натурального сырья.</p>
-      </li>
+        <li class="about-item">
+          <p class="about-description">Для приготовления мороженого используются сливки и&nbsp;молоко высочайшего качества. Все ингредиенты и&nbsp;добавки произведены из&nbsp;натурального сырья.</p>
+        </li>
 
-      <li class="about-item">
-        <p class="about-description">Доставка нашего мороженого осуществляется в&nbsp;специальном термопаке, который не&nbsp;дает мороженому растаять и&nbsp;позволяет сохранить превосходный вкус.</p>
-      </li>
-    </ul>
+        <li class="about-item">
+          <p class="about-description">Доставка нашего мороженого осуществляется в&nbsp;специальном термопаке, который не&nbsp;дает мороженому растаять и&nbsp;позволяет сохранить превосходный вкус.</p>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <section class="blog-news">
@@ -270,16 +272,18 @@
   </section>
 
   <section class="mailing-list">
-    <h2 class="visually-hidden">Наша почтовая рассылка</h2>
+    <div class="mailing-list-content">
+      <h2 class="visually-hidden">Наша почтовая рассылка</h2>
 
-    <p class="mailing-description">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будьте всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</p>
+      <p class="mailing-description">Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будьте всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</p>
 
-    <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label class="visually-hidden" for="mailing-email">Ваш почтовый адрес для рассылки</label>
-      <input id="mailing-email" required type="email" name="email" placeholder="example@email.com">
+      <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="mailing-email">Ваш почтовый адрес для рассылки</label>
+        <input class="form-input" id="mailing-email" required type="email" name="email" placeholder="example@email.com">
 
-      <button class="button" type="submit">Отправить</button>
-    </form>
+        <button class="form-button" type="submit">Отправить</button>
+      </form>
+    </div>
   </section>
 
   <section class="delivery-info">
@@ -287,26 +291,28 @@
 
     <p class="delivery-info-description">Хочется полакомиться любимым дессертом, но&nbsp;нет времени съездить в&nbsp;магазин? Закажите доставку мороженого на&nbsp;дом и&nbsp;курьер привезет вам ваш заказ в&nbsp;течение часа!</p>
 
-    <p class="">Укажите адрес и&nbsp;дату доставки, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы подтвердить заказ.</p>
+    <div class="delivery-info-form">
+      <p class="">Укажите адрес и&nbsp;дату доставки, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы подтвердить заказ.</p>
 
-    <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label class="delivery-date" for="delivery-date">
-        Дата
-        <span class="info-icon"></span>
-      </label>
-      <input id="delivery-date" required type="date" name="date" value="2020-01-04">
+      <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="form-input-label delivery-date" for="delivery-date">
+          Дата
+          <span class="info-icon"></span>
+        </label>
+        <input class="form-input" id="delivery-date" required type="date" name="date" value="2020-01-04">
 
-      <label class="delivery-phone" for="delivery-phone">Телефон</label>
-      <input id="delivery-phone" required type="tel" name="phone" placeholder="+7 800 999-00-00">
+        <label class="form-input-label delivery-phone" for="delivery-phone">Телефон</label>
+        <input class="form-input" id="delivery-phone" required type="tel" name="phone" placeholder="+7 800 999-00-00">
 
-      <label class="delivery-address" for="delivery-address">
-        Адрес
-        <span class="info-icon"></span>
-      </label>
-      <input id="delivery-address" required type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8">
+        <label class="form-input-label delivery-address" for="delivery-address">
+          Адрес
+          <span class="info-icon"></span>
+        </label>
+        <input class="form-input" id="delivery-address" required type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8">
 
-      <button class="button" type="submit">Отправить</button>
-    </form>
+        <button class="form-button" type="submit">Отправить</button>
+      </form>
+    </div>
   </section>
 
   <section class="contacts">
@@ -323,7 +329,7 @@
       <p class="contacts-caption">(с 10 до 20 ежедневно)</p>
     </address>
 
-    <button class="button">Форма обратной связи</button>
+    <button class="feedback-button">Форма обратной связи</button>
   </section>
 </main>
 

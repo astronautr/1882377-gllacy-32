@@ -1,15 +1,205 @@
-.page-body {
-  background-color: #FEAFC3;
+:root {
+  --text-default-color: #2d3440;
+  --text-description-color: #565c66;
+  --background-light-color: #fcfcfc;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text-default-color);
+  background-color: #feafc3;
+}
+
+.page-header {
+  line-height: 20px;
+}
+
+.navigation-link {
+  color: var(--text-default-color);
+  text-decoration: none;
+}
+
+.navigation-button {
+  font-size: 14px;
+}
+
+.phone-link {
+  font-weight: 700;
+}
+
+.gallery-item-title {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 48px;
+}
+
+.gallery-item-link {
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--text-default-color);
+  text-decoration: none;
+}
+
+.gallery-item-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.gift-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.gift-item {
+  background-color: #ff7799;
+}
+
+.purchase-gifts-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.gift-link {
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--text-default-color);
+  text-decoration: none;
+}
+
+.popular-product-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.product-item {
+  background-color: var(--background-light-color);
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .about-us {
   background-image: url("../img/backgrounds/waffles.jpg");
+  background-size: 100% auto;
   background-repeat: no-repeat;
+  padding: 24px;
+}
+
+.about-us-content {
+  background-color: var(--background-light-color);
+}
+
+.about-us-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.about-description {
+  color: var(--text-description-color);
 }
 
 .blog-news {
   background-image: url("../img/backgrounds/blog.jpg");
+  background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.blog-news-notice {
+  line-height: 20px;
+  color: var(--text-description-color);
+}
+
+.blog-news-link {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--text-default-color);
+  text-decoration: none;
+}
+
+.mailing-list {
+  background-image: url("../img/backgrounds/mailing-list.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 6px;
+}
+
+.mailing-list-content {
+  background-color: var(--background-light-color);
+}
+
+.mailing-description {
+  color: var(--text-description-color)
+}
+
+.form-input {
+  line-height: 20px;
+  color: #b9b9b9;
+}
+
+.form-input-label {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.feedback-button,
+.form-button {
+  font-weight: 700;
+  line-height: 20px;
+  color: #fcfcfc;
+  background-color: #ff2f64;
 }
 
 .delivery-info {
@@ -17,7 +207,19 @@
   background-repeat: no-repeat;
 }
 
+.delivery-info-description {
+  color: var(--text-description-color);
+}
+
+.delivery-info-form {
+  background-color: var(--background-light-color);
+}
+
 .contacts {
   background-image: url("../img/backgrounds/contacts.jpg");
   background-repeat: no-repeat;
+}
+
+.contacts-address {
+  background-color: var(--background-light-color);
 }
