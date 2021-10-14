@@ -36,8 +36,6 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -49,20 +47,35 @@ body {
   background-color: #feafc3;
 }
 
+.button {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .page-header {
   line-height: 20px;
 }
 
-.navigation-link {
+.navigation {
   color: var(--text-default-color);
+}
+
+.navigation-link {
+  color: inherit;
   text-decoration: none;
 }
 
-.navigation-button {
+.navigation-link.navigation-link-active {
+  background-color: #ff4a78;
+  color: #fcfcfc;
+}
+
+.button.navigation-button {
   font-size: 14px;
 }
 
-.phone-link {
+.navigation-link.phone-link {
   font-weight: 700;
 }
 
@@ -117,13 +130,13 @@ body {
   background-color: var(--background-light-color);
 }
 
-.product-title {
+.product-item.product-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.product-price {
+.product-item.product-price {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -194,8 +207,8 @@ body {
   line-height: 20px;
 }
 
-.feedback-button,
-.form-button {
+.button.feedback-button,
+.button.form-button {
   font-weight: 700;
   line-height: 20px;
   color: #fcfcfc;
@@ -222,12 +235,59 @@ body {
 
 .contacts-address {
   background-color: var(--background-light-color);
+  color: var(--text-description-color);
+}
+
+.contacts-address-text,
+.contacts-phone-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--text-default-color);
+}
+
+.contacts-phone-link {
+  text-decoration: none;
+}
+
+.contacts-caption {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.additional-info-list {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.additional-info-providers {
+  font-weight: 700;
+}
+
+.additional-info-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.about-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.developers-link {
+  color: inherit;
+  text-decoration-color: var(--text-default-color);
+}
+
+
+.breadcrumbs {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 .breadcrumbs-link {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--text-default-color);
+  color: inherit;
   text-decoration: underline;
 }
 
@@ -238,7 +298,7 @@ body {
 .header-title {
   font-size: 32px;
   font-weight: 900;
-  line-height: 46px;()
+  line-height: 46px;
 }
 
 .filters-form {
