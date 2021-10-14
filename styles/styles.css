@@ -223,3 +223,48 @@ body {
 .contacts-address {
   background-color: var(--background-light-color);
 }
+
+.breadcrumbs-link {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-default-color);
+  text-decoration: underline;
+}
+
+.breadcrumbs-link.breadcrumb-current {
+  text-decoration: none;
+}
+
+.header-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;()
+}
+
+.filters-form {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.filters-form .form-button {
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  color: inherit;
+  background-color: inherit;
+}
+
+.pagination-more {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.pagination-link {
+  line-height: 20px;
+  color: var(--text-default-color);
+  text-decoration: none;
+}
+
+.pagination-link.pagination-current {
+  background-color: var(--background-light-color);
+}
