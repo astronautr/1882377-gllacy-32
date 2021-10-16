@@ -130,16 +130,20 @@ body {
   background-color: var(--background-light-color);
 }
 
-.product-item.product-title {
+.product-item .product-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.product-item.product-price {
+.product-item .product-price {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.product-item .product-description {
+  color: var(--text-description-color);
 }
 
 .about-us {
@@ -182,6 +186,10 @@ body {
   text-decoration: none;
 }
 
+.blog-news-title {
+  font-size: inherit;
+}
+
 .mailing-list {
   background-image: url("../img/backgrounds/mailing-list.jpg");
   background-size: 100% auto;
@@ -220,6 +228,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.delivery-info-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
 .delivery-info-description {
   color: var(--text-description-color);
 }
@@ -228,12 +242,17 @@ body {
   background-color: var(--background-light-color);
 }
 
+.delivery-form-description {
+  color: var(--text-description-color);
+}
+
 .contacts {
   background-image: url("../img/backgrounds/contacts.jpg");
   background-repeat: no-repeat;
 }
 
 .contacts-address {
+  font-style: normal;
   background-color: var(--background-light-color);
   color: var(--text-description-color);
 }
