@@ -8,13 +8,11 @@
 <body class="page-body">
 <header class="page-header">
   <nav class="navigation">
-    <ul class="navigation-list">
-      <li class="navigation-item">
-        <a class="navigation-link" href="index.html">
-          <img class="shop-logo" src="img/logo/shop.svg" width="137" height="56" alt="Лого Магазина Мороженого «Глейси».">
-        </a>
-      </li>
+    <a class="navigation-logo" href="index.html">
+      <img class="shop-logo" src="img/logo/shop.svg" width="137" height="56" alt="Лого Магазина Мороженого «Глейси».">
+    </a>
 
+    <ul class="navigation-list">
       <li class="navigation-item">
         <a class="navigation-link navigation-link-active" href="catalogue.html">Каталог</a>
       </li>
@@ -420,13 +418,15 @@
   </section>
 
   <section class="developers-info">
-    <h2>Информация о&nbsp;разработчиках</h2>
+    <h2 class="visually-hidden">Информация о&nbsp;разработчиках</h2>
 
-    <a class="developers-logo" href="https://htmlacademy.ru">
-      <img class="developers-logo-img" src="img/logo/devs.svg" width="93" height="27" alt="Лого HTML Academy.">
-    </a>
+    <div class="developers-info-container">
+      <a class="developers-logo" href="https://htmlacademy.ru">
+        <img class="developers-logo-img" src="img/logo/devs.svg" width="93" height="27" alt="Лого HTML Academy.">
+      </a>
 
-    <p class="about-text">Сделано в <a class="developers-link" href="https://htmlacademy.ru/">.html academy</a> &copy;&nbsp;2021</p>
+      <p class="about-text">Сделано в <a class="developers-link" href="https://htmlacademy.ru/">.html academy</a> &copy;&nbsp;2021</p>
+    </div>
   </section>
 </footer>
 </body>
