@@ -84,6 +84,7 @@ body {
 /* Header */
 .page-header {
   width: var(--content-width);
+  min-height: 104px;
 }
 
 .navigation {
@@ -144,6 +145,8 @@ body {
   justify-content: center;
   width: var(--content-width);
 }
+
+/* Главная страница */
 
 /* Галерея мороженого */
 
@@ -377,17 +380,21 @@ body {
   text-align: center;
 }
 
+.catalogue-products .product-item-list {
+  margin-top: 85px;
+}
+
 .product-item-list {
   margin: 0;
   padding: 0;
 
-  list-style: none;
-}
-
-.popular-flavour .product-item-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 30px;
+  grid-row-gap: 85px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .product-item {
@@ -740,6 +747,67 @@ body {
   margin-top: 32px;
 }
 
+/* Страница каталога */
+
+/* Header */
+
+.catalogue-header {
+  margin-top: 32px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.breadcrumbs {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  display: inline-block;
+}
+
+.breadcrumbs-item::after {
+  position: relative;
+  top: -2px;
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
+
+  content: url("../img/icons/double-arrow-right.svg");
+}
+
+.breadcrumbs-item:last-child:after {
+  content: none;
+}
+
+.pagination-container {
+  margin-top: 57px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pagination-more-container {
+  grid-column: 2 / 3;
+  align-self: center;
+}
+
+.pagination {
+  display: flex;
+  justify-self: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination-item .pagination-link {
+  padding: 2px 8px;
+}
+
 /* Footer */
 
 .page-footer {
@@ -801,29 +869,124 @@ body {
 }
 
 .breadcrumbs {
+  display: flex;
+
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
 }
 
 .breadcrumbs-link {
+  display: inline-block;
+
   color: inherit;
   text-decoration: underline;
 }
 
 .breadcrumbs-link.breadcrumb-current {
+  pointer-events: none;
+  cursor: none;
+
   text-decoration: none;
 }
 
 .header-title {
+  margin: 16px 0 0 0;
+  padding: 0;
+
   font-size: 32px;
   font-weight: 900;
   line-height: 46px;
 }
 
+.catalogue-products {
+  margin-top: 40px;
+}
+
+.products-list {
+  margin-top: 98px;
+}
+
+.catalogue-filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.catalogue-filter-title {
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+
 .filters-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
   font-size: 14px;
   line-height: 20px;
+}
+
+.filters-row-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.filter-fillings {
+  grid-column: 1 / 3;
+}
+
+.filters-container {
+  height: 36px;
+  border-radius: 20px;
+  border: 0;
+
+  color: var(--text-default-color);
+  background-color: rgba(252,252,252, 0.3);
+}
+
+.filters-select {
+  padding: 8px 13px 8px 16px;
+}
+
+.filters-select,
+.filters-price {
+  width: 196px;
+}
+
+.filters-fillings {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.filters-fat {
+  display: grid;
+  min-width: 367px;
+  grid-column-gap: 16px;
+  grid-auto-flow: column;
+  padding: 10px 16px;
+}
+
+.filters-fat .catalogue-input-label,
+.filters-fillings .catalogue-input-label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.catalogue-input-label .catalogue-fat-input {
+  margin: 0;
+  padding: 0;
+}
+
+.filters-row-container .form-button {
+  border-radius: 20px;
+  width: 187px;
+  height: 36px;
 }
 
 .filters-form .form-button {
